@@ -1,0 +1,132 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sportbuzz</title>
+<link rel="stylesheet" type="text/css" href="homestyle.css">
+
+<script>
+	function validateForm() {
+		var x1 = document.forms["myForm"]["first_name_input"].value;
+		var x2 = document.forms["myForm"]["last_name_input"].value;
+		var x3 = document.forms.myForm.f_name_input.value;
+		if (x1 == "" || x2 == "" || x3 == "") {
+			alert("Please Fill all the Mandatory Fields");
+
+		}
+	}
+	
+	
+	function validateRoll(roll_input) {
+		var reg = /^1602-[0-9]{2}-73[1-7]-[0-9]{3}$/
+		if (!reg.test(roll_input.value)) {
+			alert("Invalid Roll Number");
+			roll_input.value = "";
+			return false;
+		} else {
+			true;
+		}
+	}
+</script>
+</head>
+<body>
+<div class="header">
+  <h1>Sportbuzz</h1>
+</div>
+
+<div class="topnav">
+  <a href="Sportbuzz.html">Home</a>
+  <a href="cricket.html">Cricket</a>
+  <a href="football.html">FootBall</a>
+  <a href="carrom.html">Carrom</a>
+  <a href="badminton.html">Badminton</a>
+  <a href="chess.html">Chess</a>
+  <a class="active" href="#">VolleyBall</a>
+  <a href="basketball.html">BasketBall</a>
+</div>
+
+<div class="vertical-menu">
+  <a href="#" class="active">Register Team</a>
+  <a href="#">Scores</a>
+  <a href="#">Result</a>
+</div>
+	<center>
+		<form>
+		  <fieldset>
+			<legend>
+				<h2>TEAM REGISTRATION FORM</h2>
+			</legend>
+			Team Name:
+			<input type="text" placeholder="Enter team Name" max=20 align="center">
+			<table cellspacing="10" cell padding="3">
+				
+			<tr>
+				<td>1)</td>
+				<td label for="first_name">Name:</td>
+				<td><input type="text" name="first_name_input" placeholder="Enter Name" max=40></td>
+				<td label for="roll">Roll No:</td>
+				<td><input type="text" name="roll_input" placeholder=" eg:1602-15-733-099" onchange="validateRoll(this)"required></td>
+				<td>Category:</td>
+				<td><input type="text" name="cat_input" placeholder=" eg:center,booster"</td>
+ 
+			</tr>
+			<tr>
+				<td>2)</td>
+				<td label for="first_name">Name:</td>
+				<td><input type="text" name="first_name_input" placeholder="Enter Name" max=40></td>
+				<td label for="roll">Roll No:</td>
+				<td><input type="text" name="roll_input" placeholder=" eg:1602-15-733-099" onchange="validateRoll(this)"required></td>
+				<td>Category:</td>
+				<td><input type="text" name="cat_input" placeholder=" eg:center,booster"</td>
+ 
+			</tr>
+			<tr>
+				<td>3)</td>
+				<td label for="first_name">Name:</td>
+				<td><input type="text" name="first_name_input" placeholder="Enter Name" max=40></td>
+				<td label for="roll">Roll No:</td>
+				<td><input type="text" name="roll_input" placeholder=" eg:1602-15-733-099" onchange="validateRoll(this)"required></td>
+				<td>Category:</td>
+				<td><input type="text" name="cat_input" placeholder=" eg:center,booster"</td>
+ 
+			</tr>
+			<tr>
+				<td>4)</td>
+				<td label for="first_name">Name:</td>
+				<td><input type="text" name="first_name_input" placeholder="Enter Name" max=40></td>
+				<td label for="roll">Roll No:</td>
+				<td><input type="text" name="roll_input" placeholder=" eg:1602-15-733-099" onchange="validateRoll(this)"required></td>
+				<td>Category:</td>
+				<td><input type="text" name="cat_input" placeholder=" eg:center,booster"</td>
+ 
+			</tr>
+			<tr>
+				<td>5)</td>
+				<td label for="first_name">Name:</td>
+				<td><input type="text" name="first_name_input" placeholder="Enter Name" max=40></td>
+				<td label for="roll">Roll No:</td>
+				<td><input type="text" name="roll_input" placeholder=" eg:1602-15-733-099" onchange="validateRoll(this)"required></td>
+				<td>Category:</td>
+				<td><input type="text" name="cat_input" placeholder=" eg:center,booster"</td>
+ 
+			</tr>
+			<tr>
+				<td>6)</td>
+				<td label for="first_name">Name:</td>
+				<td><input type="text" name="first_name_input" placeholder="Enter Name" max=40></td>
+				<td label for="roll">Roll No:</td>
+				<td><input type="text" name="roll_input" placeholder=" eg:1602-15-733-099" onchange="validateRoll(this)"required></td>
+				<td>Category:</td>
+				<td><input type="text" name="cat_input" placeholder=" eg:center,booster"</td>
+ 
+			</tr>
+			
+			</table>
+			<input class="button" type="submit" value="submit"/>
+			
+		
+		 </fieldset>
+		</form>
+	</center>
+
+</body>
+</html>
